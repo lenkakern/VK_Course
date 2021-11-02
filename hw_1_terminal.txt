@@ -1,0 +1,183 @@
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal
+$ echo "1) Посмотреть где я"
+1) Посмотреть где я
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal
+$ pwd
+/d/VK_Course/lesson_1_terminal
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal
+$ echo "2) Создать папку"
+2) Создать папку
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal
+$ mkdir folder_2
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal
+$ echo "3) Зайти в папку"
+3) Зайти в папку
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal
+$ cd folder_2
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "4) Создать 3 папки"
+4) Создать 3 папки
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ mkdir f_1 f_2 f_3
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "5) Зайти в любоую папку"
+5) Зайти в любоую папку
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ cd f_2
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ echo "6) Создать 5 файлов (3 txt, 2 json)"
+6) Создать 5 файлов (3 txt, 2 json)
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ touch text_1.txt text_2.txt text_3.txt json_1.json json_2.json
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ echo "7) Создать 3 папки"
+7) Создать 3 папки
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ mkdir newf_1 newf_2 newf_3
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ echo "8. Вывести список содержимого папки"
+8. Вывести список содержимого папки
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ ls -la
+total 4
+drwxr-xr-x 1 Lena 197121 0 Oct 30 12:15 ./
+drwxr-xr-x 1 Lena 197121 0 Oct 30 12:03 ../
+-rw-r--r-- 1 Lena 197121 0 Oct 30 12:14 json_1.json
+-rw-r--r-- 1 Lena 197121 0 Oct 30 12:14 json_2.json
+drwxr-xr-x 1 Lena 197121 0 Oct 30 12:15 newf_1/
+drwxr-xr-x 1 Lena 197121 0 Oct 30 12:15 newf_2/
+drwxr-xr-x 1 Lena 197121 0 Oct 30 12:15 newf_3/
+-rw-r--r-- 1 Lena 197121 0 Oct 30 12:14 text_1.txt
+-rw-r--r-- 1 Lena 197121 0 Oct 30 12:14 text_2.txt
+-rw-r--r-- 1 Lena 197121 0 Oct 30 12:14 text_3.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ echo "9) + Открыть любой txt файл 10) + написать туда что-нибудь, любой текст. 11) + сохранить и выйти."
+9) + Открыть любой txt файл 10) + написать туда что-нибудь, любой текст. 11) + сохранить и выйти.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ vim text_3.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ echo "12) Выйти из папки на уровень выше"
+12) Выйти из папки на уровень выше
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/f_2
+$ cd ..
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "13) переместить любые 2 файла, которые вы создали, в любую другую папку."
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ mv f_2/text_1.txt f_2/text_2.txt -t f_3
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "14) скопировать любые 2 файла, которые вы создали, в любую другую папку."
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ cp -R f_2/json_1.json f_3/text_1.txt f_1
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "15) Найти файл по имени"
+15) Найти файл по имени
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ find -name "json_1.json"
+./f_1/json_1.json
+./f_2/json_1.json
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает."
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ tail -f f_2/text_3.txt
+some text here
+line 1
+line 2
+line 3
+line 4
+line 5
+end line
+some new text here after starting tail command in bash
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "17) вывести несколько первых строк из текстового файла"
+17) вывести несколько первых строк из текстового файла
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ head -3 f_2/text_3.txt
+some text here
+line 1
+line 2
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "18) вывести несколько последних строк из текстового файла"
+18) вывести несколько последних строк из текстового файла
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ tail -3 f_2/text_3.txt
+line 5
+end line
+some new text here after starting tail command in bash
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "19) просмотреть содержимое длинного файла (команда less) изучите как она работает."
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ less f_2/text_3.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "20) вывести дату и время"
+20) вывести дату и время
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ date
+Sat Oct 30 13:01:30 RTZ 2021
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ echo "1) Отправить http запрос на сервер."
+1) Отправить http запрос на сервер.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2
+$ curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   185  100   185    0     0    551      0 --:--:-- --:--:-- --:--:--  1989{"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/folder_4_script
+$ echo "2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13"
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+Lena@Lena-PC MINGW64 /d/VK_Course/lesson_1_terminal/folder_2/folder_4_script
+$ ./hw1_script
+/d/VK_Course/lesson_1_terminal/folder_2/folder_4_script
+total 4
+drwxr-xr-x 1 Lena 197121 0 Oct 30 16:29 .
+drwxr-xr-x 1 Lena 197121 0 Oct 30 16:29 ..
+-rw-r--r-- 1 Lena 197121 0 Oct 30 16:29 json_1.json
+-rw-r--r-- 1 Lena 197121 0 Oct 30 16:29 json_2.json
+drwxr-xr-x 1 Lena 197121 0 Oct 30 16:29 newf_1
+drwxr-xr-x 1 Lena 197121 0 Oct 30 16:29 newf_2
+drwxr-xr-x 1 Lena 197121 0 Oct 30 16:29 newf_3
+-rw-r--r-- 1 Lena 197121 0 Oct 30 16:29 text_1.txt
+-rw-r--r-- 1 Lena 197121 0 Oct 30 16:29 text_2.txt
+-rw-r--r-- 1 Lena 197121 0 Oct 30 16:29 text_3.txt
