@@ -316,6 +316,7 @@ The file will have its original line endings in your working directory
 [main 4ceeeb2] Made changes in the files new2.txt and new2.json
  2 files changed, 11 insertions(+)
 
+
  16. ќтправить изменени€ на внешний репозиторий.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
@@ -390,13 +391,16 @@ drwxr-xr-x 1 Lena 197121    0 Nov  6 20:59 .git/
 
 done
 
+
  22. ќтредактировать в веб интерфейсе содержание файла Уnew3.txtФ - написать информацию о своих предпочтени€х (Ћюбимый фильм, любимый сериал, любима€ еда, любимое врем€ года, сторона которую хотели бы посетить).
 
 done
 
+
  23. —делать Commit changes (сохранить) изменени€ на веб интерфейсе.
 
 done
+
 
  24. —инхронизировать внешний и локальный репозитории (слить изменени€ с внешнего репозитори€) 
 
@@ -420,9 +424,11 @@ Fast-forward
 
 done
 
+
  26. —делать Commit changes (сохранить) изменени€ на веб интерфейсе.
 
 done
+
 
  27. —инхронизировать внешний и локальный репозитории 
 
@@ -445,9 +451,11 @@ Fast-forward
 
 done
 
+
  29. —делать Commit changes (сохранить) изменени€ на веб интерфейсе.
 
 done
+
 
  30. —инхронизировать внешний и локальный репозитории 
 
