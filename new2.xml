@@ -5,3 +5,10 @@
 	<pets>1 cat</pets>
 	<future_desired_salary>$2000+</future_desired_salary>
 </info>
+<preferences>
+	<fav_movie>"Secret Life of Walter Mitty"</fav_movie>
+	<fav_series>"Rick and Morty"</fav_series>
+	<fav_food>Khinkali and September Georgian tomatoes</fav_food>
+	<fav_season>Spring and Summer</fav_season>
+	<travel_to_country>Iceland</travel_to_country>
+</preferences>
