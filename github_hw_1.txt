@@ -1,5 +1,5 @@
 GitHub. HW_1
-1. На локальном репозитории сделать ветки для:
+1. РќР° Р»РѕРєР°Р»СЊРЅРѕРј СЂРµРїРѕР·РёС‚РѕСЂРёРё СЃРґРµР»Р°С‚СЊ РІРµС‚РєРё РґР»СЏ:
 - Postman
 
 $ git branch Postman
@@ -30,7 +30,7 @@ $ git branch MobileTesting
 
 
 
-2. Запушить все ветки на внешний репозиторий
+2. Р—Р°РїСѓС€РёС‚СЊ РІСЃРµ РІРµС‚РєРё РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 
 $ git push --all -u
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
@@ -53,8 +53,7 @@ Branch 'Postman' set up to track remote branch 'Postman' from 'origin'.
 Branch 'SQL' set up to track remote branch 'SQL' from 'origin'.
 
 
-
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+3. Р’ РІРµС‚РєРµ Bag Reports СЃРґРµР»Р°С‚СЊ С‚РµРєСЃС‚РѕРІС‹Р№ РґРѕРєСѓРјРµРЅС‚ СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ Р±Р°Рі СЂРµРїРѕСЂС‚Р°
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git checkout BugReports
@@ -68,7 +67,7 @@ Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
 $ vim bug_report_structure.txt
 
 
-4. Запушить структуру багрепорта на внешний репозиторий
+4. Р—Р°РїСѓС€РёС‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ Р±Р°РіСЂРµРїРѕСЂС‚Р° РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
 $ git add bug_report_structure.txt
@@ -94,8 +93,7 @@ To https://github.com/lenkakern/VK_Course.git
    968d704..ef4dea8  BugReports -> BugReports
 
 
-
-5. Вмержить ветку Bag Reports в Main
+5. Р’РјРµСЂР¶РёС‚СЊ РІРµС‚РєСѓ Bag Reports РІ Main
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
 $ git checkout main
@@ -111,7 +109,7 @@ Fast-forward
  create mode 100644 bug_report_structure.txt
 
 
-6. Запушить main на внешний репозиторий.
+6. Р—Р°РїСѓС€РёС‚СЊ main РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git push
@@ -120,7 +118,7 @@ To https://github.com/lenkakern/VK_Course.git
    968d704..ef4dea8  main -> main
 
 
-7. В ветке CheckLists набросать структуру чек листа.
+7. Р’ РІРµС‚РєРµ CheckLists РЅР°Р±СЂРѕСЃР°С‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ С‡РµРє Р»РёСЃС‚Р°.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git checkout CheckLists
@@ -134,7 +132,7 @@ Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
 $ vim checklist_structure.txt
 
 
-8. Запушить структуру на внешний репозиторий
+8. Р—Р°РїСѓС€РёС‚СЊ СЃС‚СЂСѓРєС‚СѓСЂСѓ РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
 $ git add checklist_structure.txt
@@ -160,12 +158,12 @@ To https://github.com/lenkakern/VK_Course.git
    968d704..c5935af  CheckLists -> CheckLists
 
 
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+9. РќР° РІРЅРµС€РЅРµРј СЂРµРїРѕР·РёС‚РѕСЂРёРё СЃРґРµР»Р°С‚СЊ Pull Request РІРµС‚РєРё CheckLists РІ main
 
 done
 
 
-10. Синхронизировать Внешнюю и Локальную ветки Main
+10. РЎРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°С‚СЊ Р’РЅРµС€РЅСЋСЋ Рё Р›РѕРєР°Р»СЊРЅСѓСЋ РІРµС‚РєРё Main
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
 $ git checkout main
@@ -219,19 +217,19 @@ drwxr-xr-x 1 Lena 197121    0 Nov  6 19:04 .git/
 
 ============================================================
 
- 4. Создать файл “new.json”
+ 4. РЎРѕР·РґР°С‚СЊ С„Р°Р№Р» вЂњnew.jsonвЂќ
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ touch new.json
 
 
- 5. Добавить файл под гит.
+ 5. Р”РѕР±Р°РІРёС‚СЊ С„Р°Р№Р» РїРѕРґ РіРёС‚.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git add new.json
 
 
- 6. Закоммитить файл.
+ 6. Р—Р°РєРѕРјРјРёС‚РёС‚СЊ С„Р°Р№Р».
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git commit -m "Added new file new.json"
 [main d6235c1] Added new file new.json
@@ -239,7 +237,7 @@ $ git commit -m "Added new file new.json"
  create mode 100644 new.json
 
 
- 7. Отправить файл на внешний GitHub репозиторий.
+ 7. РћС‚РїСЂР°РІРёС‚СЊ С„Р°Р№Р» РЅР° РІРЅРµС€РЅРёР№ GitHub СЂРµРїРѕР·РёС‚РѕСЂРёР№.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git push origin main
@@ -254,19 +252,19 @@ To https://github.com/lenkakern/VK_Course.git
    a6cd57b..d6235c1  main -> main
 
 
- 8. Создать файлы new2.json, new2.xml, new2.txt
+ 8. РЎРѕР·РґР°С‚СЊ С„Р°Р№Р»С‹ new2.json, new2.xml, new2.txt
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ touch new2.json new2.xml new2.txt
 
 
- 9. Добавить файлы под гит.
+ 9. Р”РѕР±Р°РІРёС‚СЊ С„Р°Р№Р»С‹ РїРѕРґ РіРёС‚.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git add new2.json new2.xml new2.txt
 
 
- 10. Закоммитить файлы.
+ 10. Р—Р°РєРѕРјРјРёС‚РёС‚СЊ С„Р°Р№Р»С‹.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git commit -m "Added new files new2.json, new2.xml, new2.txt"
@@ -277,7 +275,7 @@ $ git commit -m "Added new files new2.json, new2.xml, new2.txt"
  create mode 100644 new2.xml
 
 
- 11. Отправить файлы на внешний GitHub репозиторий.
+ 11. РћС‚РїСЂР°РІРёС‚СЊ С„Р°Р№Р»С‹ РЅР° РІРЅРµС€РЅРёР№ GitHub СЂРµРїРѕР·РёС‚РѕСЂРёР№.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git push origin main
@@ -292,20 +290,20 @@ To https://github.com/lenkakern/VK_Course.git
    d6235c1..3ab7378  main -> main
 
 
- 12. Отредактировать содержание файла “new2.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+ 12. РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° вЂњnew2.txtвЂќ - РЅР°РїРёСЃР°С‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРµР±Рµ (Р¤РРћ, РІРѕР·СЂР°СЃС‚, РєРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРјР°С€РЅРёС… Р¶РёРІРѕС‚РЅС‹С…, Р±СѓРґСѓС‰Р°СЏ Р¶РµР»Р°РµРјР°СЏ Р·Р°СЂРїР»Р°С‚Р°).
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ vim new2.txt
 
 
- 13. Отредактировать содержание файла “new2.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+ 13. РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° вЂњnew2.jsonвЂќ - РЅР°РїРёСЃР°С‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРµР±Рµ (Р¤РРћ, РІРѕР·СЂР°СЃС‚, РєРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРјР°С€РЅРёС… Р¶РёРІРѕС‚РЅС‹С…, Р±СѓРґСѓС‰Р°СЏ Р¶РµР»Р°РµРјР°СЏ Р·Р°СЂРїР»Р°С‚Р°). Р’СЃС‘ РЅР°РїРёСЃР°С‚СЊ РІ С„РѕСЂРјР°С‚Рµ JSON.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ vim new2.json
 
 
- 14. Добавить и закоммитить “new2.txt” одной строчкой. 
- 15. Добавить и закоммитить “new2.json” одной строчкой. 
+ 14. Р”РѕР±Р°РІРёС‚СЊ Рё Р·Р°РєРѕРјРјРёС‚РёС‚СЊ вЂњnew2.txtвЂќ РѕРґРЅРѕР№ СЃС‚СЂРѕС‡РєРѕР№. 
+ 15. Р”РѕР±Р°РІРёС‚СЊ Рё Р·Р°РєРѕРјРјРёС‚РёС‚СЊ вЂњnew2.jsonвЂќ РѕРґРЅРѕР№ СЃС‚СЂРѕС‡РєРѕР№. 
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git commit -am "Made changes in the files new2.txt and new2.json"
@@ -317,7 +315,7 @@ The file will have its original line endings in your working directory
  2 files changed, 11 insertions(+)
 
 
- 16. Отправить изменения на внешний репозиторий.
+ 16. РћС‚РїСЂР°РІРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git push origin main
@@ -332,13 +330,13 @@ To https://github.com/lenkakern/VK_Course.git
    3ab7378..4ceeeb2  main -> main
 
 
- 17. Отредактировать содержание файла “new2.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ 17. РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° вЂњnew2.xmlвЂќ - РЅР°РїРёСЃР°С‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРµР±Рµ (Р¤РРћ, РІРѕР·СЂР°СЃС‚, РєРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРјР°С€РЅРёС… Р¶РёРІРѕС‚РЅС‹С…, Р±СѓРґСѓС‰Р°СЏ Р¶РµР»Р°РµРјР°СЏ Р·Р°СЂРїР»Р°С‚Р°). Р’СЃС‘ РЅР°РїРёСЃР°С‚СЊ РІ С„РѕСЂРјР°С‚Рµ XML.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ vim new2.xml
 
 
- 18. Добавить и закоммитить “new2.xml” одной строчкой. 
+ 18. Р”РѕР±Р°РІРёС‚СЊ Рё Р·Р°РєРѕРјРјРёС‚РёС‚СЊ вЂњnew2.xmlвЂќ РѕРґРЅРѕР№ СЃС‚СЂРѕС‡РєРѕР№. 
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git commit -am "Made changes in the file new2.xml"
@@ -348,7 +346,7 @@ The file will have its original line endings in your working directory
  1 file changed, 7 insertions(+)
 
 
- 19. Отправить изменения на внешний репозиторий.
+ 19. РћС‚РїСЂР°РІРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№.
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git push origin main
@@ -363,9 +361,9 @@ To https://github.com/lenkakern/VK_Course.git
    4ceeeb2..7c783b3  main -> main
 
 
- 20. Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий.
+ 20. РћС‚РїСЂР°РІРёС‚СЊ РїСЂРµРґС‹РґСѓС‰РµРµ РґРѕРјР°С€РЅРµРµ Р·Р°РґР°РЅРёРµ РїРѕ GitBush Terminal РЅР° РІРЅРµС€РЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂРёР№.
 
->>hw_1_terminal.txt уже там<<
+>>hw_1_terminal.txt СѓР¶Рµ С‚Р°Рј<<
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ ls -la
@@ -387,22 +385,22 @@ drwxr-xr-x 1 Lena 197121    0 Nov  6 20:59 .git/
 -rw-r--r-- 1 Lena 197121   36 Nov  5 20:14 test_6.json
 
 
- 21. В веб интерфейсе GitHub создать файл new3.txt.
+ 21. Р’ РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ GitHub СЃРѕР·РґР°С‚СЊ С„Р°Р№Р» new3.txt.
 
 done
 
 
- 22. Отредактировать в веб интерфейсе содержание файла “new3.txt” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить).
+ 22. РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РІ РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ СЃРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° вЂњnew3.txtвЂќ - РЅР°РїРёСЃР°С‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРІРѕРёС… РїСЂРµРґРїРѕС‡С‚РµРЅРёСЏС… (Р›СЋР±РёРјС‹Р№ С„РёР»СЊРј, Р»СЋР±РёРјС‹Р№ СЃРµСЂРёР°Р», Р»СЋР±РёРјР°СЏ РµРґР°, Р»СЋР±РёРјРѕРµ РІСЂРµРјСЏ РіРѕРґР°, СЃС‚РѕСЂРѕРЅР° РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РµР»Рё Р±С‹ РїРѕСЃРµС‚РёС‚СЊ).
 
 done
 
 
- 23. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 23. РЎРґРµР»Р°С‚СЊ Commit changes (СЃРѕС…СЂР°РЅРёС‚СЊ) РёР·РјРµРЅРµРЅРёСЏ РЅР° РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ.
 
 done
 
 
- 24. Синхронизировать внешний и локальный репозитории (слить изменения с внешнего репозитория) 
+ 24. РЎРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°С‚СЊ РІРЅРµС€РЅРёР№ Рё Р»РѕРєР°Р»СЊРЅС‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёРё (СЃР»РёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ СЃ РІРЅРµС€РЅРµРіРѕ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ) 
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git pull -p
@@ -420,17 +418,17 @@ Fast-forward
  create mode 100644 new3.txt
 
 
- 25. Отредактировать в веб интерфейсе содержание файла “new2.json” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате JSON.
+ 25. РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РІ РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ СЃРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° вЂњnew2.jsonвЂќ - РґРѕР±Р°РІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРІРѕРёС… РїСЂРµРґРїРѕС‡С‚РµРЅРёСЏС… (Р›СЋР±РёРјС‹Р№ С„РёР»СЊРј, Р»СЋР±РёРјС‹Р№ СЃРµСЂРёР°Р», Р»СЋР±РёРјР°СЏ РµРґР°, Р»СЋР±РёРјРѕРµ РІСЂРµРјСЏ РіРѕРґР°, СЃС‚РѕСЂРѕРЅР° РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РµР»Рё Р±С‹ РїРѕСЃРµС‚РёС‚СЊ). Р’СЃС‘ РІ С„РѕСЂРјР°С‚Рµ JSON.
 
 done
 
 
- 26. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 26. РЎРґРµР»Р°С‚СЊ Commit changes (СЃРѕС…СЂР°РЅРёС‚СЊ) РёР·РјРµРЅРµРЅРёСЏ РЅР° РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ.
 
 done
 
 
- 27. Синхронизировать внешний и локальный репозитории 
+ 27. РЎРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°С‚СЊ РІРЅРµС€РЅРёР№ Рё Р»РѕРєР°Р»СЊРЅС‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёРё 
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git pull -p
@@ -447,17 +445,17 @@ Fast-forward
  1 file changed, 5 insertions(+)
 
 
- 28. Отредактировать в веб интерфейсе содержание файла “new2.xml” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
+ 28. РћС‚СЂРµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РІ РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ СЃРѕРґРµСЂР¶Р°РЅРёРµ С„Р°Р№Р»Р° вЂњnew2.xmlвЂќ - РґРѕР±Р°РІРёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРІРѕРёС… РїСЂРµРґРїРѕС‡С‚РµРЅРёСЏС… (Р›СЋР±РёРјС‹Р№ С„РёР»СЊРј, Р»СЋР±РёРјС‹Р№ СЃРµСЂРёР°Р», Р»СЋР±РёРјР°СЏ РµРґР°, Р»СЋР±РёРјРѕРµ РІСЂРµРјСЏ РіРѕРґР°, СЃС‚РѕСЂРѕРЅР° РєРѕС‚РѕСЂСѓСЋ С…РѕС‚РµР»Рё Р±С‹ РїРѕСЃРµС‚РёС‚СЊ). Р’СЃС‘ РІ С„РѕСЂРјР°С‚Рµ XML.
 
 done
 
 
- 29. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 29. РЎРґРµР»Р°С‚СЊ Commit changes (СЃРѕС…СЂР°РЅРёС‚СЊ) РёР·РјРµРЅРµРЅРёСЏ РЅР° РІРµР± РёРЅС‚РµСЂС„РµР№СЃРµ.
 
 done
 
 
- 30. Синхронизировать внешний и локальный репозитории 
+ 30. РЎРёРЅС…СЂРѕРЅРёР·РёСЂРѕРІР°С‚СЊ РІРЅРµС€РЅРёР№ Рё Р»РѕРєР°Р»СЊРЅС‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёРё 
 
 Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
 $ git pull -p
