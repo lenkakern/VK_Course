@@ -1,0 +1,467 @@
+GitHub. HW_1
+1. На локальном репозитории сделать ветки для:
+- Postman
+
+$ git branch Postman
+
+- Jmeter
+
+$ git branch JMeter
+
+- CheckLists
+
+$ git branch CheckLists
+
+- Bag Reports
+
+$ git branch BugReports
+
+- SQL
+
+$ git branch SQL
+
+- Charles
+
+$ git branch Charles
+
+- Mobile testing
+
+$ git branch MobileTesting
+
+
+
+2. Запушить все ветки на внешний репозиторий
+
+$ git push --all -u
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/lenkakern/VK_Course.git
+ * [new branch]      BugReports -> BugReports
+ * [new branch]      Charles -> Charles
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      JMeter -> JMeter
+ * [new branch]      MobileTesting -> MobileTesting
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+Branch 'apple_pay' set up to track remote branch 'apple_pay' from 'origin'.
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Branch 'BugReports' set up to track remote branch 'BugReports' from 'origin'.
+Branch 'Charles' set up to track remote branch 'Charles' from 'origin'.
+Branch 'CheckLists' set up to track remote branch 'CheckLists' from 'origin'.
+Branch 'JMeter' set up to track remote branch 'JMeter' from 'origin'.
+Branch 'MobileTesting' set up to track remote branch 'MobileTesting' from 'origin'.
+Branch 'Postman' set up to track remote branch 'Postman' from 'origin'.
+Branch 'SQL' set up to track remote branch 'SQL' from 'origin'.
+
+
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git checkout BugReports
+Switched to branch 'BugReports'
+Your branch is up to date with 'origin/BugReports'.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
+$ touch bug_report_structure.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
+$ vim bug_report_structure.txt
+
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
+$ git add bug_report_structure.txt
+warning: LF will be replaced by CRLF in bug_report_structure.txt.
+The file will have its original line endings in your working directory
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
+$ git commit -m "Added new text file bug_report_structure.txt"
+[BugReports ef4dea8] Added new text file bug_report_structure.txt
+ 1 file changed, 11 insertions(+)
+ create mode 100644 bug_report_structure.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 413 bytes | 137.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lenkakern/VK_Course.git
+   968d704..ef4dea8  BugReports -> BugReports
+
+
+
+5. Вмержить ветку Bag Reports в Main
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (BugReports)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git merge BugReports
+Updating 968d704..ef4dea8
+Fast-forward
+ bug_report_structure.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 bug_report_structure.txt
+
+
+6. Запушить main на внешний репозиторий.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/lenkakern/VK_Course.git
+   968d704..ef4dea8  main -> main
+
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git checkout CheckLists
+Switched to branch 'CheckLists'
+Your branch is up to date with 'origin/CheckLists'.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
+$ touch checklist_structure.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
+$ vim checklist_structure.txt
+
+
+8. Запушить структуру на внешний репозиторий
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
+$ git add checklist_structure.txt
+warning: LF will be replaced by CRLF in checklist_structure.txt.
+The file will have its original line endings in your working directory
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
+$ git commit -m "Added new text file checklist_structure.txt"
+[CheckLists c5935af] Added new text file checklist_structure.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 checklist_structure.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 173.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lenkakern/VK_Course.git
+   968d704..c5935af  CheckLists -> CheckLists
+
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+done
+
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (CheckLists)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ ls -la
+total 29
+drwxr-xr-x 1 Lena 197121    0 Nov  6 19:04 ./
+drwxr-xr-x 1 Lena 197121    0 Nov  6 17:55 ../
+drwxr-xr-x 1 Lena 197121    0 Nov  6 19:04 .git/
+-rw-r--r-- 1 Lena 197121   11 Nov  2 19:22 README.md
+-rw-r--r-- 1 Lena 197121  150 Nov  6 19:04 bug_report_structure.txt
+-rw-r--r-- 1 Lena 197121 6964 Oct 30 16:32 hw_1_terminal.txt
+-rwxr-xr-x 1 Lena 197121 1528 Oct 30 15:33 script*
+-rw-r--r-- 1 Lena 197121   52 Nov  2 19:35 test_1.json
+-rw-r--r-- 1 Lena 197121   77 Nov  5 20:32 test_5.json
+-rw-r--r-- 1 Lena 197121   36 Nov  5 20:14 test_6.json
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git pull -p
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 737 bytes | 9.00 KiB/s, done.
+From https://github.com/lenkakern/VK_Course
+   ef4dea8..a6cd57b  main       -> origin/main
+Updating ef4dea8..a6cd57b
+Fast-forward
+ checklist_structure.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 checklist_structure.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ ls -la
+total 30
+drwxr-xr-x 1 Lena 197121    0 Nov  6 19:04 ./
+drwxr-xr-x 1 Lena 197121    0 Nov  6 17:55 ../
+drwxr-xr-x 1 Lena 197121    0 Nov  6 19:04 .git/
+-rw-r--r-- 1 Lena 197121   11 Nov  2 19:22 README.md
+-rw-r--r-- 1 Lena 197121  150 Nov  6 19:04 bug_report_structure.txt
+-rw-r--r-- 1 Lena 197121   53 Nov  6 19:04 checklist_structure.txt
+-rw-r--r-- 1 Lena 197121 6964 Oct 30 16:32 hw_1_terminal.txt
+-rwxr-xr-x 1 Lena 197121 1528 Oct 30 15:33 script*
+-rw-r--r-- 1 Lena 197121   52 Nov  2 19:35 test_1.json
+-rw-r--r-- 1 Lena 197121   77 Nov  5 20:32 test_5.json
+-rw-r--r-- 1 Lena 197121   36 Nov  5 20:14 test_6.json
+
+
+============================================================
+
+ 4. Создать файл “new.json”
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ touch new.json
+
+
+ 5. Добавить файл под гит.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git add new.json
+
+
+ 6. Закоммитить файл.
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git commit -m "Added new file new.json"
+[main d6235c1] Added new file new.json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+
+ 7. Отправить файл на внешний GitHub репозиторий.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 275 bytes | 137.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lenkakern/VK_Course.git
+   a6cd57b..d6235c1  main -> main
+
+
+ 8. Создать файлы new2.json, new2.xml, new2.txt
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ touch new2.json new2.xml new2.txt
+
+
+ 9. Добавить файлы под гит.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git add new2.json new2.xml new2.txt
+
+
+ 10. Закоммитить файлы.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git commit -m "Added new files new2.json, new2.xml, new2.txt"
+[main 3ab7378] Added new files new2.json, new2.xml, new2.txt
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new2.json
+ create mode 100644 new2.txt
+ create mode 100644 new2.xml
+
+
+ 11. Отправить файлы на внешний GitHub репозиторий.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes | 134.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lenkakern/VK_Course.git
+   d6235c1..3ab7378  main -> main
+
+
+ 12. Отредактировать содержание файла “new2.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата).
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ vim new2.txt
+
+
+ 13. Отредактировать содержание файла “new2.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ vim new2.json
+
+
+ 14. Добавить и закоммитить “new2.txt” одной строчкой. 
+ 15. Добавить и закоммитить “new2.json” одной строчкой. 
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git commit -am "Made changes in the files new2.txt and new2.json"
+warning: LF will be replaced by CRLF in new2.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in new2.txt.
+The file will have its original line endings in your working directory
+[main 4ceeeb2] Made changes in the files new2.txt and new2.json
+ 2 files changed, 11 insertions(+)
+
+ 16. Отправить изменения на внешний репозиторий.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 513 bytes | 171.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lenkakern/VK_Course.git
+   3ab7378..4ceeeb2  main -> main
+
+
+ 17. Отредактировать содержание файла “new2.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ vim new2.xml
+
+
+ 18. Добавить и закоммитить “new2.xml” одной строчкой. 
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git commit -am "Made changes in the file new2.xml"
+warning: LF will be replaced by CRLF in new2.xml.
+The file will have its original line endings in your working directory
+[main 7c783b3] Made changes in the file new2.xml
+ 1 file changed, 7 insertions(+)
+
+
+ 19. Отправить изменения на внешний репозиторий.
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 411 bytes | 137.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lenkakern/VK_Course.git
+   4ceeeb2..7c783b3  main -> main
+
+
+ 20. Отправить предыдущее домашнее задание по GitBush Terminal на внешний репозиторий.
+
+>>hw_1_terminal.txt уже там<<
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ ls -la
+total 33
+drwxr-xr-x 1 Lena 197121    0 Nov  6 20:58 ./
+drwxr-xr-x 1 Lena 197121    0 Nov  6 17:55 ../
+drwxr-xr-x 1 Lena 197121    0 Nov  6 20:59 .git/
+-rw-r--r-- 1 Lena 197121   11 Nov  2 19:22 README.md
+-rw-r--r-- 1 Lena 197121  150 Nov  6 19:04 bug_report_structure.txt
+-rw-r--r-- 1 Lena 197121   53 Nov  6 19:04 checklist_structure.txt
+-rw-r--r-- 1 Lena 197121 6964 Oct 30 16:32 hw_1_terminal.txt
+-rw-r--r-- 1 Lena 197121    0 Nov  6 19:06 new.json
+-rw-r--r-- 1 Lena 197121   95 Nov  6 19:24 new2.json
+-rw-r--r-- 1 Lena 197121  121 Nov  6 19:22 new2.txt
+-rw-r--r-- 1 Lena 197121  182 Nov  6 20:58 new2.xml
+-rwxr-xr-x 1 Lena 197121 1528 Oct 30 15:33 script*
+-rw-r--r-- 1 Lena 197121   52 Nov  2 19:35 test_1.json
+-rw-r--r-- 1 Lena 197121   77 Nov  5 20:32 test_5.json
+-rw-r--r-- 1 Lena 197121   36 Nov  5 20:14 test_6.json
+
+
+ 21. В веб интерфейсе GitHub создать файл new3.txt.
+
+done
+
+ 22. Отредактировать в веб интерфейсе содержание файла “new3.txt” - написать информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить).
+
+done
+
+ 23. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+done
+
+ 24. Синхронизировать внешний и локальный репозитории (слить изменения с внешнего репозитория) 
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git pull -p
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.84 KiB | 6.00 KiB/s, done.
+From https://github.com/lenkakern/VK_Course
+   7c783b3..a080ba8  main       -> origin/main
+Updating 7c783b3..a080ba8
+Fast-forward
+ new3.txt | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 new3.txt
+
+
+ 25. Отредактировать в веб интерфейсе содержание файла “new2.json” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате JSON.
+
+done
+
+ 26. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+done
+
+ 27. Синхронизировать внешний и локальный репозитории 
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git pull -p
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.11 KiB | 5.00 KiB/s, done.
+From https://github.com/lenkakern/VK_Course
+   a080ba8..2be910f  main       -> origin/main
+Updating a080ba8..2be910f
+Fast-forward
+ new2.json | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+
+ 28. Отредактировать в веб интерфейсе содержание файла “new2.xml” - добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить). Всё в формате XML.
+
+done
+
+ 29. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+done
+
+ 30. Синхронизировать внешний и локальный репозитории 
+
+Lena@Lena-PC MINGW64 /d/VK_Course/repository/VK_Course (main)
+$ git pull -p
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.17 KiB | 7.00 KiB/s, done.
+From https://github.com/lenkakern/VK_Course
+   2be910f..9c54e63  main       -> origin/main
+Updating 2be910f..9c54e63
+Fast-forward
+ new2.xml | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
