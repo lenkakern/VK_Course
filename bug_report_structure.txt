@@ -1,0 +1,11 @@
+>Bug ID
+>Bug Summary
+>Bug Description
+>Steps to Reproduce
+>Reproducibility
+>Severity
+>Priority
+>Symptom
+>Workaround
+>Comments
+>Attachments
