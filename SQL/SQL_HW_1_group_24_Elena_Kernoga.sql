@@ -21,10 +21,10 @@ select id, name, email, created_on from students;
 
 --	 8. ¬ывести пользователей где password 12333
 select name, password from students 
-where password like '12333';
+where password = '12333';
 
 --	 9. ¬ывести пользователей которые были созданы 2021-03-26 00:00:00
-select name, created_on from students
+select name from students
 where created_on = '2021-03-26 00:00:00';
 
 --	 10. ¬ывести пользователей где в имени есть слово јнна
@@ -40,63 +40,63 @@ select name from students
 where name like '%а%';
 
 --	 13. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00
-select name, created_on from students
+select name from students
 where created_on = '2021-07-12 00:00:00';
 
 --	 14. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и имеют пароль 1m313
-select name, password, created_on from students
-where created_on = '2021-07-12 00:00:00' and password like '1m313';
+select name from students
+where created_on = '2021-07-12 00:00:00' and password = '1m313';
 
 --	 15. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть слово Andrey
-select name, created_on from students
+select name from students
 where created_on = '2021-07-12 00:00:00' and name like '%Andrey%';
 
 --	 16. ¬ывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
-select name, created_on from students
+select name from students
 where created_on = '2021-07-12 00:00:00' and name like '%8%';
 
 --	 17. ¬ывести пользовател€ у которых id равен 10
-select id, name from students
+select name from students
 where id = 10;
 
 --	 18. ¬ывести пользовател€ у которых id равен 53
-select id, name from students
+select name from students
 where id = 53;
 
 --	 19. ¬ывести пользовател€ у которых id больше 40
-select id, name from students
+select name from students
 where id > 40;
 
 --	 20. ¬ывести пользовател€ у которых id меньше 30
-select id, name from students
+select name from students
 where id < 30;
 
 --	 21. ¬ывести пользовател€ у которых id меньше 27 или больше 88
-select id, name from students
+select name from students
 where id < 27 or id > 88;
 
 --	 22. ¬ывести пользовател€ у которых id меньше либо равно 37
-select id, name from students
+select name from students
 where id <= 37;
 
 --	 23. ¬ывести пользовател€ у которых id больше либо равно 37
-select id, name from students
+select name from students
 where id >= 37;
 
 --	 24. ¬ывести пользовател€ у которых id больше 80 но меньше 90
-select id, name from students
+select name from students
 where id > 80 and id < 90;
 
 --	 25. ¬ывести пользовател€ у которых id между 80 и 90
-select id, name from students
+select name from students
 where id between 80 and 90;
 
 --	 26. ¬ывести пользователей где password равен 12333, 1m313, 123313
-select name, password from students
+select name from students
 where password in ('12333', '1m313', '123313');
 
 --	 27. ¬ывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00
-select name, created_on from students
+select name from students
 where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
 
 --	 28. ¬ывести минимальный id 
